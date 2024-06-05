@@ -1,7 +1,3 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
-    </style>
-
 body {  
     font-family: Arial, sans-serif;
     display: flex;
@@ -74,3 +70,5 @@ color: #ffffff;
 
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap')
