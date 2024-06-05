@@ -1,5 +1,6 @@
 body {  
-    font-family: Arial, sans-serif;
+    
+    font-family: "Reddit Mono", monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,4 +72,4 @@ color: #ffffff;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap')
+
