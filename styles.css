@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6f7ff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+#balloonContainer {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 20px;
+}
+
+.balloon {
+    background-color: #ffccff;
+    border: 2px solid #cc33ff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    position: absolute;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.balloon:hover {
+    transform: scale(1.1);
+}
+
+.balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #cc33ff transparent transparent transparent;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
