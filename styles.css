@@ -51,4 +51,11 @@ body {
     to { opacity: 1; }
 }
 
-#button { size: 0cap;}
+#interactBtn { 
+    
+    font-size: 20;
+    background-color: #545457;
+    
+
+    
+}
