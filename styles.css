@@ -16,13 +16,13 @@ body {
 
 #balloonContainer {
     position: relative;
-    font-family:"Reddit Mono", monospace ;
     width: 100vw;
     height: 80vh;
     margin-top: 20px;
 }
 
 .balloon {
+    font-family: cursive;
     background-color: #ffccff;
     border: 2px solid #cc33ff;
     border-radius: 10px;
