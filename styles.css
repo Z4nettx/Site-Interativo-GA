@@ -62,7 +62,7 @@ body {
     text-align: center;
     display: inline-block;
     cursor: pointer;
-    background-color: #00ff88;
+    background-color: #ffffff;
     border:#000000;
     border-width: 100px ;
     border-right: 100px;
@@ -77,14 +77,14 @@ body {
     transform: scale(1.05);
     text-transform: uppercase;
     text-transform: bold;
-    
+    background-color: #6e6e6e;
 }
 
 #interactBtn::after {
 
     background-color: #006536;
     text-transform: lowercase;
-    
+
 }
 
 
