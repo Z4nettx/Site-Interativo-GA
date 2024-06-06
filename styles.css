@@ -30,12 +30,12 @@ body {
     padding: 10px;
     max-width: 200px;
     position: absolute;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out;
     transition: transform 0.3s ease-in-out;
 }
 
 .balloon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .balloon::after {
