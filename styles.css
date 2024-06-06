@@ -46,6 +46,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-width: 10px;
+    border-style: solid;
     border-color: #000000 transparent transparent transparent;
 }
 
@@ -59,8 +60,8 @@ body {
     font-size: 30;
     background-color: #00ff88;
     border:#000000;
-    border-width: 100 ;
-    border-right: 100;
+    border-width: 100px ;
+    border-right: 100px;
     font-weight: bold;
 }
 
