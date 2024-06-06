@@ -68,7 +68,7 @@ body {
     border-right: 100px;
     font-weight: bold; 
     border-radius: 12px;
-    transition: background-color 0.3 ease, transform 1.5 ease;
+    transition: background-color 1.5 ease, transform 1.5 ease;
 
 }
     
