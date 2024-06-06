@@ -39,6 +39,7 @@ body {
 }
 
 .balloon::after {
+    font-family: "Montserrat", sans-serif;
     content: '';
     position: absolute;
     bottom: -10px;
