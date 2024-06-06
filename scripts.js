@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const balloonContainer = document.getElementById('balloonContainer');
 
     const messages = [
-        "A ginástica artística é uma modalidade olímpica!",
+        <strong>"A ginástica artística é uma modalidade olímpica!",
         "Ela inclui apresentações em diferentes aparelhos como solo, barras e argolas.",
         "Os atletas realizam movimentos de força, flexibilidade, equilíbrio e coordenação.",
         "As competições são divididas em masculino e feminino.",
-        "É um esporte que exige muita disciplina e dedicação."
+        "É um esporte que exige muita disciplina e dedicação." </strong>
     ];
 
     let messageIndex = 0;
@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.textContent = messages[messageIndex];
             
             // Posicionamento aleatório
-            const x = Math.random() * (window.innerWidth - 200);
-            const y = Math.random() * (window.innerHeight - 200);
+            const x = Math.random() * (window.innerWidth - 300);
+            const y = Math.random() * (window.innerHeight - 300);
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
 
