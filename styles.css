@@ -46,7 +46,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-width: 10px;
-    border-style: solid;
     border-color: #000000 transparent transparent transparent;
 }
 
