@@ -7,13 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
         "Ela inclui apresentações em diferentes aparelhos como solo, barras e argolas.",
         "Os atletas realizam movimentos de força, flexibilidade, equilíbrio e coordenação.",
         "As competições são divididas em masculino e feminino.",
-        "É um esporte que exige muita disciplina e dedicação." 
+        "É um esporte que exige muita disciplina e dedicação."
     ];
 
     let messageIndex = 0;
+    let currentBalloon = null;
 
     interactBtn.addEventListener('click', function () {
         if (messageIndex < messages.length) {
+            if (currentBalloon) {
+                balloonContainer.removeChild(currentBalloon);
+            }
+
             const balloon = document.createElement('div');
             balloon.className = 'balloon';
             balloon.textContent = messages[messageIndex];
@@ -25,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.style.top = `${y}px`;
 
             balloonContainer.appendChild(balloon);
+            currentBalloon = balloon;
             messageIndex++;
         } else {
             alert('Você já aprendeu tudo sobre ginástica artística!');
