@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const balloonContainer = document.getElementById('balloonContainer');
 
     const messages = [
-        <strong>"A ginástica artística é uma modalidade olímpica!",
+        "A ginástica artística é uma modalidade olímpica!",
         "Ela inclui apresentações em diferentes aparelhos como solo, barras e argolas.",
         "Os atletas realizam movimentos de força, flexibilidade, equilíbrio e coordenação.",
         "As competições são divididas em masculino e feminino.",
-        "É um esporte que exige muita disciplina e dedicação." </strong>
+        "É um esporte que exige muita disciplina e dedicação." 
     ];
 
     let messageIndex = 0;
