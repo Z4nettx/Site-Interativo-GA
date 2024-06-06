@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.textContent = messages[messageIndex];
             
             // Posicionamento aleatório
-            const x = Math.random() * (window.innerWidth - 200);
-            const y = Math.random() * (window.innerHeight - 200);
+            const x = Math.random() * (window.innerWidth - 1000);
+            const y = Math.random() * (window.innerHeight - 1000);
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
 
