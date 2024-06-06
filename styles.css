@@ -77,10 +77,15 @@ body {
     transform: scale(1.05);
     text-transform: uppercase;
     text-transform: bold;
-    background-color: #006536;
+    
 }
 
+#interactBtn::after {
 
+    background-color: #006536;
+    text-transform: lowercase;
+    
+}
 
 
 #titulo { 
