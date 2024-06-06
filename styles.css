@@ -57,13 +57,23 @@ body {
 
 #interactBtn { 
     font-family: "Comic Neue", cursive ;
-    font-size: 30;
+    font-size: 30px;
+    padding: 20px 40px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
     background-color: #00ff88;
     border:#000000;
     border-width: 100px ;
     border-right: 100px;
-    font-weight: bold;
+    font-weight: bold; 
+
+
+
 }
+    
+   #interactBtn:hover {transform: scale(1.5);}
+
 
 #titulo { 
    
