@@ -15,6 +15,7 @@ body {
 }
 
 #balloonContainer {
+    font-family: "Comic Neue", cursive;
     position: relative;
     width: 100vw;
     height: 80vh;
@@ -22,7 +23,7 @@ body {
 }
 
 .balloon {
-    font-family: cursive;
+    font-family: "Comic Neue", cursive;
     background-color: #ffccff;
     border: 2px solid #cc33ff;
     border-radius: 10px;
@@ -54,7 +55,7 @@ body {
 }
 
 #interactBtn { 
-    font-family:"Reddit Mono", monospace ;
+    font-family: "Comic Neue", cursive ;
     width: 40; height: 20;
     font-size: 20;
     background-color: #545457;
