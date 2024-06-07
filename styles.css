@@ -75,7 +75,6 @@ body {
    #interactBtn:hover {
     text-shadow: #000000;
     transform: scale(1.05);
-    text-transform: uppercase;
     text-transform: bold;
     background-color: #6e6e6e;
 }
@@ -98,4 +97,11 @@ color: #ffffff;
 
 }
 
-
+.balloonImage {
+    position: absolute;
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 100px;
+    border: 2px solid #cc33ff;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
