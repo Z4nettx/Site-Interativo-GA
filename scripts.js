@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const images = [
-        "images/image1.jpg", // Atualize com os caminhos das suas imagens
-        "images/image2.jpg",
-        "images/image3.jpg",
-        "images/image4.jpg",
-        "images/image5.jpg"
+        "https://imgur.com/SlPMUJn", // Atualize com os caminhos das suas imagens
+        "https://imgur.com/MSlimrZ",
+        "https://imgur.com/4e8QA1B",
+        "https://imgur.com/O1Eo9e6",
+        "https://imgur.com/4e8QA1B"
     ];
 
     let messageIndex = 0;
