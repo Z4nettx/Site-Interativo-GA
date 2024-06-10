@@ -99,7 +99,7 @@ color: #ffffff;
 
 .balloonImage {
     position: absolute;
-    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: auto; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
     border: 2px solid #cc33ff;
     border-radius: 10px;
