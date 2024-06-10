@@ -99,9 +99,16 @@ color: #ffffff;
 
 .balloonImage {
     position: absolute;
-    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 100px;
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
     border: 2px solid #cc33ff;
     border-radius: 10px;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out;
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+
 }
