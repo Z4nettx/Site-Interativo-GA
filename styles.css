@@ -105,7 +105,7 @@ color: #ffffff;
 
 }
 
-.showImageBtn {
+.showImageBtn, .hideImageBtn {
     background-color: #008CBA; /* Azul */
     border: none;
     color: white;
@@ -121,7 +121,7 @@ color: #ffffff;
     position: absolute;
 }
 
-.showImageBtn:hover {
+.showImageBtn:hover, .hideImageBtn:hover {
     background-color: #007B9E;
     transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
 }
