@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
             showImageBtn.style.left = `${x + 25}px`;
-            showImageBtn.style.top = `${y + 50}px`;
+            showImageBtn.style.top = `${y + 60}px`;
 
             balloonContainer.appendChild(balloon);
             balloonContainer.appendChild(showImageBtn);
