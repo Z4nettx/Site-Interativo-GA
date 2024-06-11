@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const x = Math.random() * (window.innerWidth - 200);
             const y = Math.random() * (window.innerHeight - 200);
             balloon.style.left = `${x}px`;
-            balloon.style.top = `${y}px`;
+            balloon.style.top = `${y + 2}px`;
             showImageBtn.style.left = `${x}px`;
             showImageBtn.style.top = `${y + 100}px`;
             hideImageBtn.style.left = `${x + 110}px`; // Ajusta o posicionamento para não sobrepor
