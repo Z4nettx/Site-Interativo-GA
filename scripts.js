@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
             showImageBtn.style.left = `${x}px`;
-            showImageBtn.style.top = `${y + 50}px`;
+            showImageBtn.style.top = `${y + 60}px`;
             hideImageBtn.style.left = `${x + 110}px`; // Ajusta o posicionamento para não sobrepor
-            hideImageBtn.style.top = `${y + 50}px`;
+            hideImageBtn.style.top = `${y + 60}px`;
 
             balloonContainer.appendChild(balloon);
             balloonContainer.appendChild(showImageBtn);
