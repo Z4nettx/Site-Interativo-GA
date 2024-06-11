@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Posicionamento aleatório
             const x = Math.random() * (window.innerWidth - 200);
-            const y = Math.max() * (window.innerHeight - 200);
+            const y = Math.max() * (window.innerHeight - 0);
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y + 20}px`;
             image.style.left = `${x + 25}px`; // Centraliza a imagem abaixo do balão
