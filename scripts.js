@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const images = [
         "https://www.cob.org.br/pt/img/noticia/imagem/420/grande/", // Atualize com os caminhos das suas imagens
         "https://i.imgur.com/MSlimrZ.jpeg",
-        "https://imgur.com/4e8QA1B",
+        "https://i.imgur.com/4e8QA1B.jpeg",
         "https://imgur.com/O1Eo9e6",
         "https://imgur.com/4e8QA1B"
     ];
