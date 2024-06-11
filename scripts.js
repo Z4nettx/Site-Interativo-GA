@@ -18,38 +18,64 @@ document.addEventListener('DOMContentLoaded', function () {
         "https://i.imgur.com/4e8QA1B.jpeg"
     ];
 
+
     let messageIndex = 0;
     let currentBalloon = null;
     let currentImage = null;
+    let currentBtn = null;
 
     interactBtn.addEventListener('click', function () {
         if (messageIndex < messages.length) {
             if (currentBalloon) {
                 balloonContainer.removeChild(currentBalloon);
-                balloonContainer.removeChild(currentImage);
+                if (currentImage) {
+                    balloonContainer.removeChild(currentImage);
+                }
+                if (currentBtn) {
+                    balloonContainer.removeChild(currentBtn);
+                }
             }
 
             const balloon = document.createElement('div');
             balloon.className = 'balloon';
             balloon.textContent = messages[messageIndex];
-            
-            const image = document.createElement('img');
-            image.className = 'balloonImage';
-            image.src = images[messageIndex];
-            image.alt = messages[messageIndex];
+
+            const showImageBtn = document.createElement('button');
+            showImageBtn.className = 'showImageBtn';
+            showImageBtn.textContent = 'Mostrar Imagem';
+
+            showImageBtn.addEventListener('click', function () {
+                if (currentImage) {
+                    balloonContainer.removeChild(currentImage);
+                }
+
+                const image = document.createElement('img');
+                image.className = 'balloonImage';
+                image.src = images[messageIndex];
+                image.alt = messages[messageIndex];
+
+                // Posicionamento da imagem abaixo do balão
+                const x = parseInt(balloon.style.left, 10) + 25; // Centraliza a imagem abaixo do balão
+                const y = parseInt(balloon.style.top, 10) + 80; // Posiciona a imagem abaixo do balão
+                image.style.left = `${x}px`;
+                image.style.top = `${y}px`;
+
+                balloonContainer.appendChild(image);
+                currentImage = image;
+            });
 
             // Posicionamento aleatório
             const x = Math.random() * (window.innerWidth - 200);
-            const y = Math.max() * (window.innerHeight - 0);
+            const y = Math.random() * (window.innerHeight - 200);
             balloon.style.left = `${x}px`;
-            balloon.style.top = `${y + 20}px`;
-            image.style.left = `${x + 25}px`; // Centraliza a imagem abaixo do balão
-            image.style.top = `${y + 100}px`; // Posiciona a imagem abaixo do balão
+            balloon.style.top = `${y}px`;
+            showImageBtn.style.left = `${x + 25}px`;
+            showImageBtn.style.top = `${y + 50}px`;
 
             balloonContainer.appendChild(balloon);
-            balloonContainer.appendChild(image);
+            balloonContainer.appendChild(showImageBtn);
             currentBalloon = balloon;
-            currentImage = image;
+            currentBtn = showImageBtn;
             messageIndex++;
         } else {
             alert('Você já aprendeu tudo sobre ginástica artística!');
