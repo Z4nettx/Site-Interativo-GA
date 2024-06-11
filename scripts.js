@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
             image.style.left = `${x + 25}px`; // Centraliza a imagem abaixo do balão
-            image.style.top = `${y + 80}px`; // Posiciona a imagem abaixo do balão
+            image.style.top = `${y + 100}px`; // Posiciona a imagem abaixo do balão
 
             balloonContainer.appendChild(balloon);
             balloonContainer.appendChild(image);
