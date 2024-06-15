@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "https://i.imgur.com/4e8QA1B.jpeg"
     ];
 
-
     let messageIndex = 0;
     let currentBalloon = null;
     let currentImage = null;
@@ -63,13 +62,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = images[messageIndex];
                 image.alt = messages[messageIndex];
 
-                // Posicionamento da imagem abaixo do balão
+                // Posicionamento da imagem e do botão abaixo do balão
                 const x = parseInt(balloon.style.left, 10);
-                const y = parseInt(balloon.style.top, 10) + 50; // Posiciona a imagem abaixo do balão
+                const y = parseInt(balloon.style.top, 10) + 50;
                 image.style.left = `${x}px`;
                 image.style.top = `${y + 50}px`;
 
+                hideImageBtn.style.left = `${x + 160}px`; // Ajusta o posicionamento para não sobrepor
+                hideImageBtn.style.top = `${y + 50}px`;
+
                 balloonContainer.appendChild(image);
+                balloonContainer.appendChild(hideImageBtn);
                 currentImage = image;
 
                 // Alterna os botões
@@ -92,15 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const x = Math.random() * (window.innerWidth - 200);
             const y = Math.random() * (window.innerHeight - 200);
             balloon.style.left = `${x}px`;
-            balloon.style.top = `${y + 2}px`;
+            balloon.style.top = `${y}px`;
             showImageBtn.style.left = `${x}px`;
-            showImageBtn.style.top = `${y + 100}px`;
-            hideImageBtn.style.left = `${x + 110}px`; // Ajusta o posicionamento para não sobrepor
-            hideImageBtn.style.top = `${y + 100}px`;
+            showImageBtn.style.top = `${y + 50}px`;
 
             balloonContainer.appendChild(balloon);
             balloonContainer.appendChild(showImageBtn);
-            balloonContainer.appendChild(hideImageBtn);
             currentBalloon = balloon;
             currentShowBtn = showImageBtn;
             currentHideBtn = hideImageBtn;
