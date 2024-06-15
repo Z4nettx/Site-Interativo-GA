@@ -7,7 +7,9 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #18191a;
-    overflow: hidden;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    /* Permite rolagem vertical */
+    overflow-y: auto; /* <--- ADICIONADO */
 }
 
 .container {
@@ -20,6 +22,9 @@ body {
     width: 100vw;
     height: 80vh;
     margin-top: 20px;
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+    /* Permite rolagem vertical */
+    overflow-y: visible; /* <--- ADICIONADO */
 }
 
 .balloon {
@@ -95,6 +100,7 @@ color: #ffffff;
     border: 2px solid #cc33ff;
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
+    position: absolute;
 }
     
 
