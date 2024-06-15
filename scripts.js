@@ -62,14 +62,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = images[messageIndex];
                 image.alt = messages[messageIndex];
 
-                // Posicionamento da imagem e do botão abaixo do balão
-                const x = parseInt(balloon.style.left, 10);
-                const y = parseInt(balloon.style.top, 10) + 50;
+                // Posicionamento da imagem ao lado do balão
+                const x = parseInt(balloon.style.left, 10) + 220; // 220 pixels à direita do balão
+                const y = parseInt(balloon.style.top, 10);
                 image.style.left = `${x}px`;
-                image.style.top = `${y + 50}px`;
+                image.style.top = `${y}px`;
+                image.style.position = 'absolute'; // Garante que a imagem esteja no lugar correto
 
                 hideImageBtn.style.left = `${x + 160}px`; // Ajusta o posicionamento para não sobrepor
-                hideImageBtn.style.top = `${y + 50}px`;
+                hideImageBtn.style.top = `${y}px`;
 
                 balloonContainer.appendChild(image);
                 balloonContainer.appendChild(hideImageBtn);
@@ -92,12 +93,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Posicionamento aleatório
-            const x = Math.random() * (window.innerWidth - 200);
+            const x = Math.random() * (window.innerWidth - 400); // Ajuste para acomodar o balão e a imagem
             const y = Math.random() * (window.innerHeight - 200);
             balloon.style.left = `${x}px`;
             balloon.style.top = `${y}px`;
-            showImageBtn.style.left = `${x}px`;
-            showImageBtn.style.top = `${y + 50}px`;
+            showImageBtn.style.left = `${x + 220}px`; // Posiciona o botão ao lado do balão
+            showImageBtn.style.top = `${y}px`;
 
             balloonContainer.appendChild(balloon);
             balloonContainer.appendChild(showImageBtn);
