@@ -158,18 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
             currentHideBtn = hideImageBtn;
             messageIndex++;
 
-            // Remover título e balão após 5 segundos
-            setTimeout(function () {
-                if (currentBalloon === balloon && currentTitle === title) {
-                    balloonContainer.removeChild(balloon);
-                    balloonContainer.removeChild(title);
-                    balloonContainer.removeChild(showImageBtn);
-                    if (currentImage) {
-                        balloonContainer.removeChild(currentImage);
-                        balloonContainer.removeChild(hideImageBtn);
-                    }
-                }
-            }, 5000); // 5000 milissegundos (5 segundos)
+           
         } else {
             alert('Você já aprendeu tudo sobre ginástica artística!');
         }
