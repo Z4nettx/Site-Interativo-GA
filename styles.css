@@ -146,3 +146,10 @@ color: #ffffff;
     text-align: center;
     display: none; /* Inicialmente oculto */
 }
+.container {
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: #cc33ff;
+}
