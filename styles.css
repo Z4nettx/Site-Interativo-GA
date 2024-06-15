@@ -131,3 +131,17 @@ color: #ffffff;
     background-color: #007B9E;
     transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
 }
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    max-width: 200px;
+    text-align: center;
+}
