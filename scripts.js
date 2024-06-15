@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const topics = [
         "Introdução",
         "Solo",
-        "APARELHOS:Barras Assimétricas",
-        "APARELHOS: Barra Fixa",
-        "APARELHOS: Argolas",
-        "APARELHOS: Cavalo com Alças",
-        "MOVIMENTOS: Salto sobre a Mesa",
+        "Barras Assimétricas",
+        "Barra Fixa",
+        "Argolas",
+        "Cavalo com Alças",
+        "Salto sobre a Mesa",
         "Trave de Equilíbrio",
         "Benefícios",
         "Treinamento",
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
         
     ];
-    
 
     let messageIndex = 0;
     let currentBalloon = null;
@@ -158,6 +157,19 @@ document.addEventListener('DOMContentLoaded', function () {
             currentShowBtn = showImageBtn;
             currentHideBtn = hideImageBtn;
             messageIndex++;
+
+            // Remover título e balão após 5 segundos
+            setTimeout(function () {
+                if (currentBalloon === balloon && currentTitle === title) {
+                    balloonContainer.removeChild(balloon);
+                    balloonContainer.removeChild(title);
+                    balloonContainer.removeChild(showImageBtn);
+                    if (currentImage) {
+                        balloonContainer.removeChild(currentImage);
+                        balloonContainer.removeChild(hideImageBtn);
+                    }
+                }
+            }, 5000); // 5000 milissegundos (5 segundos)
         } else {
             alert('Você já aprendeu tudo sobre ginástica artística!');
         }
