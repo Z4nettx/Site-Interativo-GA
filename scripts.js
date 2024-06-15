@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const y = parseInt(balloon.style.top, 10);
                 image.style.left = `${x}px`;
                 image.style.top = `${y}px`;
-                image.style.position = 'absolute'; // Garante que a imagem esteja no lugar correto
 
                 hideImageBtn.style.left = `${x + 160}px`; // Ajusta o posicionamento para não sobrepor
                 hideImageBtn.style.top = `${y}px`;
